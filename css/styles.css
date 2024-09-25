@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --primary-color:#96BB7C;
+    --primary-color-Hover: #486534;
+    --secundary-color: #E74040;
+    --black: #252B42;
+    --white: #ffffff;
+    --faded-secondary-color-1: #DDF4FF;
+    --faded-secondary-color-2: #FFF2F3;
+    --faded-secondary-color-3: #FAFAFA;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p, h1, h2, h3, h4{
+    color: var(--black);
+}
+
+h1{
+    font-size: 58px;
+}
+
+h4{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+h5{
+    color: var(--primary-color);
+    font-size: 16px;
+}
+
+body{
+    font-family:"Montserrat", sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 24px;
+    background-color: var(--white);
+    max-width: 1440px;
+    margin: 0 auto;
+
+    & p{
+        font-size: 24px;
+        font-weight: bold;
+    }
+}
+
+.buttons_boxs{
+    display: flex;
+    gap: 24px;
+}
+
+.button{
+    padding: 14px 24px;
+    font-size: 14px;
+    font-weight: bold;
+    color: inherit;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.primary{
+    background-color: var(--primary-color);
+    border: 1px solid  var(--primary-color);
+    color: var(--white);
+
+    &:hover{
+        background-color: var(--primary-color-Hover);
+        border: 1px solid  var(--primary-color-Hover);
+        color: var(--white);
+    }
+}
+
+.secundary{
+    border: 1px solid  var(--primary-color);
+    color: var(--primary-color);
+
+    &:hover{
+        background-color: var(--primary-color-Hover);
+        border: 1px solid  var(--primary-color-Hover);
+        color: var(--white);
+    }
+}
+
+.ghost{
+    color: var(--primary-color);
+
+    &:hover{
+        background-color: var(--primary-color-Hover);
+        border: 1px solid  var(--primary-color-Hover);
+        color: var(--white);
+    }
+}
+
+.container{
+    padding: 80px 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: var(--faded-secondary-color-1);
+    display: flex;
+}
+
+header img{
+    margin-bottom: -85px;
+    max-width: 700px;
+}
+
+
+.header_text{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 570px;
+}
