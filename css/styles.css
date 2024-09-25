@@ -9,6 +9,7 @@
     --faded-secondary-color-1: #DDF4FF;
     --faded-secondary-color-2: #FFF2F3;
     --faded-secondary-color-3: #FAFAFA;
+    --second-text-color: #737373;
 }
 
 *{
@@ -115,11 +116,16 @@ nav{
 header{
     background-color: var(--faded-secondary-color-1);
     display: flex;
+    overflow: hidden;
 }
 
 header figure{
     margin-bottom: -85px;
     max-width: 700px;
+}
+
+header figure img{
+    width: 100%;
 }
 
 
@@ -130,7 +136,18 @@ header figure{
     max-width: 570px;
 }
 
-/* Estilos de las cards */
+/* Estilos de las metrics */
+
+.metrics_container{
+    padding: 80px 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+}
 
 .metrics_container_card{
     text-align: center;
@@ -144,4 +161,61 @@ header figure{
 
 .metrics_text{
     font-weight: bold;
+}
+
+/* Estilos de las cards */
+
+.education{
+    background-color: var(--faded-secondary-color-2);
+}
+
+.education_container{
+    padding: 160px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+    width: 100%;
+    max-width: 1050px;
+    margin: auto;
+
+    & h2{
+        width: 100%;
+        font-size: 40px;
+    }
+}
+
+.education_Cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.education_Cards_card{
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    background-color: var(--white);
+    box-shadow: 0px 13px 19px 0px #00000012;
+
+
+    & img{
+        width: 72px;
+    }
+
+    & hr{
+        width: 50px;
+        border: 2px solid var(--secundary-color);
+    }
+
+    & .card_title{
+        font-weight: bold;
+    }
+
+    & .card_text{
+        color: var(--second-text-color);
+    }
 }
