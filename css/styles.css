@@ -105,7 +105,7 @@ nav{
     padding: 80px 24px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     max-width: 1440px;
@@ -117,7 +117,7 @@ header{
     display: flex;
 }
 
-header img{
+header figure{
     margin-bottom: -85px;
     max-width: 700px;
 }
@@ -128,4 +128,20 @@ header img{
     flex-direction: column;
     gap: 30px;
     max-width: 570px;
+}
+
+/* Estilos de las cards */
+
+.metrics_container_card{
+    text-align: center;
+}
+
+.metrics_title{
+    font-size: 58px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.metrics_text{
+    font-weight: bold;
 }
