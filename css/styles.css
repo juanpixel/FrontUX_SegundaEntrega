@@ -1,5 +1,8 @@
+/* Se importa la fuente */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Se definen las variables de color */
 :root{
     --primary-color:#96BB7C;
     --primary-color-Hover: #486534;
@@ -12,6 +15,7 @@
     --second-text-color: #737373;
 }
 
+/* Reseteo de general y estilos generasles */
 *{
     margin: 0;
     padding: 0;
@@ -47,6 +51,7 @@ body{
     font-family:"Montserrat", sans-serif;
 }
 
+/* Menú */
 nav{
     display: flex;
     justify-content: space-between;
@@ -99,6 +104,10 @@ nav{
     }
 }
 
+.icon-menu{
+    display: none;
+}
+
 .ghost{
     color: var(--primary-color);
 
@@ -108,6 +117,8 @@ nav{
         color: var(--white);
     }
 }
+
+/* header */
 
 .container{
     padding: 80px 24px;
@@ -128,7 +139,11 @@ header{
 
 header figure{
     margin-bottom: -85px;
-    max-width: 700px;
+    width: 50%;
+}
+
+.header_text{
+    width: 50%;
 }
 
 header figure img{
@@ -227,6 +242,8 @@ header figure img{
     }
 }
 
+/* footer */
+
 footer{
     background-color: var(--faded-secondary-color-3);
 }
@@ -243,4 +260,63 @@ footer{
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+
+
+@media(max-width: 768px){
+
+    header figure{
+        margin-bottom: -85px;
+        width: 60%;
+    }
+    
+    .header_text{
+        width: 40%;
+        & .buttons_boxs{
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            text-align: center;
+        }
+    }
+
+    .metrics_container{
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 480px){
+
+    .desktop_cta{
+        display: none;
+    }
+
+    .icon-menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container{
+        text-align: center;
+
+        & .header_text{
+          width: 100%;
+        }
+    }
+
+    .container figure{
+        display: none;
+    }
+
+    .education_container h2{
+        text-align: center;
+    }
+
+    .footer_container{
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
 }
