@@ -262,7 +262,7 @@ footer{
     gap: 20px;
 }
 
-
+/* Tablets */
 
 @media(max-width: 768px){
 
@@ -285,6 +285,8 @@ footer{
         justify-content: space-evenly;
     }
 }
+
+/* Celulares*/
 
 @media (max-width: 480px){
 
